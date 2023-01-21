@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style3.css">
+    <script src="./js/three.min.js"></script>
+    <script src="./js/script3.js"></script>
+    <title>Airplane(by shyro)</title>
+</head>
+<body>
+    <div class="game-holder" id="gameHolder">
+        <div class="header">
+            <h1><span>der</span>Flieger</h1> 
+            <h2>höher.weiter.schneller</h2>
+            <div class="score" id="score">
+                <div class="score_content" id="level">
+                    <div class="score_label">Ebene</div>
+                    <div class="score_value score_value--level" id="levelValue">1</div>
+                    <svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
+                        <circle id="levelCircleBgr" cx="100" cy="100" r="80" fill="none" stroke="#d1b790" stroke-width="24px"/>
+                        <circle id="levelCircleStroke"cx="100" cy="100" r="80" fill="none" stroke="#68c3c0" stroke-width="14px" stroke-dasharray="502"/>
+                    </svg>              
+                </div>
+                <div class="score_content" id="dist">
+                    <div class="score_label">Abstand</div>
+                    <div class="score_value score_value--dist" id="distValue">000</div>
+                </div>
+                <div class="score_content" id="energy">
+                    <div class="score_label">Energie</div>
+                    <div class="score_value score_value--energy" id="energyValue">
+                        <div class="energy-bar" id="energyBar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message message--replay" id="replayMessage">Klick für vor vorne anfangen</div>
+        <div class="message message--instructions" id="instructions">Sammeln Sie blaue Pillen<span>Vermeiden Sie rote Pillen</span></div>
+        <div class="world" id="world"></div>
+    </div>
+
+<nav class="meta">    
+    <a class="recl" href="https://discord.gg/MV7FX8Gw"> <img src="Group333.png" width="60%" >  </a>
+    <a class="recl" href="https://www.instagram.com/it.dreams.kh/"> <img src="Group222.png" width="60%" >  </a>       
+</nav>
+    
+</body>
+</html>
